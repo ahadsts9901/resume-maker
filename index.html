@@ -61,6 +61,60 @@
                         </tr>
                     </table>
             </fieldset>
+                <!-- personal information -->
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+                        <table>
+                            <tr>
+                                    <td class="top">Gender:</td>
+                                    <td class="box">
+                                        <label class="container">
+                                        <input class="radio" required id="gender" type="radio" name="gender" value="male">
+                                        <span class="radio"></span>
+                                        Male</label>
+                                        <br/>
+                                        <label class="container">
+                                            <input class="radio" required id="gender" type="radio" name="gender" value="female">
+                                        <span class="radio"></span>
+                                        Female</label>
+                                    <br/>
+                                        <label class="container">
+                                        <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
+                                        <span class="radio"></span>
+                                        Third Gender</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="religion">Religion:</label></td>
+                                <td><input required id="religion" class="input" placeholder="Religion" type="text" minlength="3" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nationality">Nationality:</label></td>
+                                <td><input required id="nationality" class="input" placeholder="Nationality" type="text" minlength="5" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Age:</label></td>
+                                <td><input required id="age" class="input" placeholder="Age" type="number" min="4" max="100"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nic">NIC:</label></td>
+                                <td><input required id="nic" class="input" placeholder="NIC" type="number" minlength="5" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td class="top">Martial Status:</td>
+                                <td class="box">
+                                    <label class="container">
+                                    <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="single">
+                                    <span class="radio"></span>
+                                    Single</label>
+                                    <br/>
+                                    <label class="container">
+                                        <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="married">
+                                    <span class="radio"></span>
+                                    Married</label>
+                                </td>
+                        </tr>
+                        </table>
+                </fieldset>
     </form>
 
 
