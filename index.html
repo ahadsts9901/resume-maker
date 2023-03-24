@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CV Maker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- icons cdn -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- font cdn -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+    <!-- animate.style cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src='main.js'></script>
+</head>
+<body>
+
+   <header>
+    <h2>Resume Maker</h2>
+   </header>
+
+   <p class="message">Enter Your Information And Create Your Resume</p>
+
+    <!-- Resume top information -->
+    <form>
+        <fieldset>
+            <legend><h2>Header Information</h2></legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input required id="name" class="input" placeholder="Name" type="text" minlength="3" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="contact">Contact:</label></td>
+                            <td><input required id="contact" class="input" placeholder="Phone Number" type="number" minlength="5" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td class="top"><label for="address">Address:</label></td>
+                            <td><textarea required id="address" class="textarea" placeholder="Address" type="text" minlength="10" maxlength="150"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gmail">G-Mail:</label></td>
+                            <td><input required id="gmail" class="input" placeholder="G-Mail" type="text" minlength="10" maxlength="40"></td>
+                        </tr>
+                        <tr>
+                            <td class="top"><label for="object">Object:</label></td>
+                            <td><textarea required id="object" class="textarea" placeholder="Object" type="text" minlength="10" maxlength="150"></textarea></td>
+                        </tr>
+                    </table>
+            </fieldset>
+    </form>
+
+
+<br/>
+<hr/>
+<p class="center">Thanks For Visiting</p>
+<p class="center">Regards! Muhammad Ahad&copy;</p>
+</body>
+</html>

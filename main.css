@@ -1,0 +1,84 @@
+*{
+    font-family: 'Ruda', 'sans-serif';
+    font-weight: 800;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0em;
+    color: #fff;
+    background-color: #1e437d;
+    /* background-color: #1a3961; */
+}
+
+header h2{
+    margin: 0em;
+    padding: 0.2em 1.5em;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.message{
+    text-align: center;
+    width: 100%;
+    height: 2em;
+}
+
+body{
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    padding: 1em;
+    border: 2px solid #1e437d;
+}
+
+.input{
+    color: #000;
+    background-color: #ececec;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 10em;
+    height: 3em;
+}
+
+.textarea{
+    color: #000;
+    background-color: #ececec;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 10em;
+    height: 8em;
+}
+
+td{
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-start;    
+}
+
+legend h3{
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+.center{
+        font-weight: bold;
+}
