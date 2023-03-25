@@ -196,14 +196,19 @@ info {
   padding-left: 1em;
 }
 
-info p {
-  margin: 0em;
+info p,
+list ul li {
+  margin: 1em 0em;
 }
 
 #headername-r {
   color: #1e437d;
   width: 100%;
   text-align: center;
+}
+
+.blue {
+  color: #1e437d;
 }
 
 /* custom radio button */
