@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,14 +8,15 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <!-- icons cdn -->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+
     <!-- font cdn -->
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- bootstrap cdn -->
 
@@ -23,162 +25,199 @@
 
     <!-- animate.style cdn -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src='main.js'></script>
 </head>
+
 <body>
 
-   <header>
-    <h2>Resume Maker</h2>
-   </header>
+    <header>
+        <h2>Resume Maker</h2>
+    </header>
 
-   <p class="message">Enter Your Information And Create Your Resume</p>
-   <!-- user input information started -->
+    <p class="message">Enter Your Information And Create Your Resume</p>
+    <!-- user input information started -->
     <!-- Resume top information -->
     <form onsubmit="CreateResume(event); return false ">
         <fieldset>
-            <legend><h2>Header Information</h2></legend>
-                            <label for="name">Name:</label>
-                            <br/>
-                            <input required id="name" class="input" placeholder="Name" type="text" minlength="3" maxlength="20">
-                            <br/>
-                            <label for="contact">Contact:</label>
-                            <br/>
-                            <input required id="contact" class="input" placeholder="Phone Number" type="number" minlength="5" maxlength="20">
-                            <br/>
-                            <label for="address">Address:</label>
-                            <br/>
-                            <textarea required id="address" class="textarea" placeholder="Address" type="text" minlength="10" maxlength="150"></textarea>
-                            <br/>
-                            <label for="gmail">G-Mail:</label>
-                            <br/>
-                            <input required id="gmail" class="input" placeholder="G-Mail" type="text" minlength="10" maxlength="40">
-                            <br/>
-                            <label for="object">Object:</label>
-                            <br/>
-                            <textarea required id="object" class="textarea" placeholder="Object" type="text" minlength="10" maxlength="150"></textarea>
-            </fieldset>
-                <!-- personal information -->
-            <fieldset>
-                <legend><h2>Personal Information</h2></legend>
-                                Gender:
-                                <br/>
-                                        <label class="container">
-                                        <input class="radio" required id="gender" type="radio" name="gender" value="male">
-                                        <span class="radio"></span>
-                                        Male</label>
-                                        <label class="container">
-                                            <input class="radio" required id="gender" type="radio" name="gender" value="female">
-                                        <span class="radio"></span>
-                                        Female</label>
-                                        <label class="container">
-                                        <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
-                                        <span class="radio"></span>
-                                        Third</label>
-                                <br/>
-                                <label for="religion">Religion:</label>
-                                <br/>
-                                <input required id="religion" class="input" placeholder="Religion" type="text" minlength="3" maxlength="20">
-                                <br/>
-                                <label for="nationality">Nationality:</label>
-                                <br/>
-                                <input required id="nationality" class="input" placeholder="Nationality" type="text" minlength="5" maxlength="20">
-                                <br/>
-                                <label for="age">Age:</label>
-                                <br/>
-                                <input required id="age" class="input" placeholder="Age" type="number" min="4" max="100">
-                                <br/>
-                                <label for="nic">NIC:</label>
-                                <br/>
-                                <input required id="nic" class="input" placeholder="NIC" type="number" minlength="5" maxlength="20">
-                                <br/>
-                                Martial Status:
-                                <br/>
-                                    <label class="container">
-                                    <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="single">
-                                    <span class="radio"></span>
-                                    Single</label>
-                                    <label class="container">
-                                        <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="married">
-                                    <span class="radio"></span>
-                                    Married</label>
-                </fieldset>
-                <!-- education -->
-                <fieldset>
-                    <legend><h2>Education</h2></legend>
+            <legend>
+                <h2>Header Information</h2>
+            </legend>
+            <label for="name">Name:</label>
+            <br />
+            <input required id="name" class="input" placeholder="Name" type="text" minlength="3" maxlength="20">
+            <br />
+            <label for="contact">Contact:</label>
+            <br />
+            <input required id="contact" class="input" placeholder="Phone Number" type="number" minlength="5"
+                maxlength="20">
+            <br />
+            <label for="address">Address:</label>
+            <br />
+            <textarea required id="address" class="textarea" placeholder="Address" type="text" minlength="10"
+                maxlength="150"></textarea>
+            <br />
+            <label for="gmail">G-Mail:</label>
+            <br />
+            <input required id="gmail" class="input" placeholder="G-Mail" type="text" minlength="10" maxlength="40">
+            <br />
+            <label for="object">Object:</label>
+            <br />
+            <textarea required id="object" class="textarea" placeholder="Object" type="text" minlength="10"
+                maxlength="150"></textarea>
+        </fieldset>
+        <!-- personal information -->
+        <fieldset>
+            <legend>
+                <h2>Personal Information</h2>
+            </legend>
+            Gender:
+            <br />
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="male">
+                <span class="radio"></span>
+                Male</label>
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="female">
+                <span class="radio"></span>
+                Female</label>
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
+                <span class="radio"></span>
+                Third</label>
+            <br />
+            <label for="religion">Religion:</label>
+            <br />
+            <input required id="religion" class="input" placeholder="Religion" type="text" minlength="3" maxlength="20">
+            <br />
+            <label for="nationality">Nationality:</label>
+            <br />
+            <input required id="nationality" class="input" placeholder="Nationality" type="text" minlength="5"
+                maxlength="20">
+            <br />
+            <label for="age">Age:</label>
+            <br />
+            <input required id="age" class="input" placeholder="Age" type="number" min="4" max="100">
+            <br />
+            <label for="nic">NIC:</label>
+            <br />
+            <input required id="nic" class="input" placeholder="NIC" type="number" minlength="5" maxlength="20">
+            <br />
+            Martial Status:
+            <br />
+            <label class="container">
+                <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="single">
+                <span class="radio"></span>
+                Single</label>
+            <label class="container">
+                <input class="radio" required id="martialstatus" type="radio" name="martialstatus" value="married">
+                <span class="radio"></span>
+                Married</label>
+        </fieldset>
+        <!-- education -->
+        <fieldset>
+            <legend>
+                <h2>Education</h2>
+            </legend>
 
-                        <label for="school-education">School Education:</label>
-                        <br/>
-                        <textarea required id="school-education" class="input" placeholder="School Education" type="text" minlength="3" maxlength="20">Matriculation From</textarea>
-                        <br/>
-                        <label for="college-education">College Education:</label>
-                        <br/>
-                        <textarea required id="college-education" class="input" placeholder="College Education" type="text" minlength="3" maxlength="20">Intermediate From</textarea>
-                        <br/>
-                        <label for="professional-education">Professional Education:</label>
-                        <br/>
-                        <textarea required id="professional-education" class="input" placeholder="Professional Education" type="text" minlength="3" maxlength="20"></textarea>
+            <label for="school-education">School Education:</label>
+            <br />
+            <textarea required id="school-education" class="input" placeholder="School Education" type="text"
+                minlength="3" maxlength="20">Matriculation From</textarea>
+            <br />
+            <label for="college-education">College Education:</label>
+            <br />
+            <textarea required id="college-education" class="input" placeholder="College Education" type="text"
+                minlength="3" maxlength="20">Intermediate From</textarea>
+            <br />
+            <label for="professional-education">Professional Education:</label>
+            <br />
+            <textarea required id="professional-education" class="input" placeholder="Professional Education"
+                type="text" minlength="3" maxlength="20"></textarea>
 
-                    </fieldset>
-            <!-- skills -->
-            <fieldset>
-                <legend><h2>Skills</h2></legend>
+        </fieldset>
+        <!-- skills -->
+        <fieldset>
+            <legend>
+                <h2>Skills</h2>
+            </legend>
 
-                    <label for="skill-1">Skill 1:</label>
-                    <br/>
-                    <textarea id="skill-1" class="input" placeholder="Skill 1" type="text" minlength="3" maxlength="30"></textarea>
-                    <br/>
-                    <label for="skill-2">Skill 2:</label>
-                    <br/>
-                    <textarea id="skill-2" class="input" placeholder="Skill 2" type="text" minlength="3" maxlength="30"></textarea>
-                    <br/>
-                    <label for="skill-3">Skill 3:</label>
-                    <br/>
-                    <textarea id="skill-3" class="input" placeholder="Skill 3" type="text" minlength="3" maxlength="30"></textarea>
-                    <br/>
-                    <label for="skill-4">Skill 4:</label>
-                    <br/>
-                    <textarea id="skill-4" class="input" placeholder="Skill 4" type="text" minlength="3" maxlength="30"></textarea>
-                </fieldset>
-            <!-- experience -->
-            <fieldset>
-                <legend><h2>Experience</h2></legend>
+            <label for="skill-1">Skill 1:</label>
+            <br />
+            <textarea id="skill-1" class="input" placeholder="Skill 1" type="text" minlength="3"
+                maxlength="30"></textarea>
+            <br />
+            <label for="skill-2">Skill 2:</label>
+            <br />
+            <textarea id="skill-2" class="input" placeholder="Skill 2" type="text" minlength="3"
+                maxlength="30"></textarea>
+            <br />
+            <label for="skill-3">Skill 3:</label>
+            <br />
+            <textarea id="skill-3" class="input" placeholder="Skill 3" type="text" minlength="3"
+                maxlength="30"></textarea>
+            <br />
+            <label for="skill-4">Skill 4:</label>
+            <br />
+            <textarea id="skill-4" class="input" placeholder="Skill 4" type="text" minlength="3"
+                maxlength="30"></textarea>
+        </fieldset>
+        <!-- experience -->
+        <fieldset>
+            <legend>
+                <h2>Experience</h2>
+            </legend>
 
-                    <label for="experience-1">Experience 1:</label>
-                    <br/>
-                    <textarea id="experience-1" class="input" placeholder="Experience 1" type="text" minlength="3" maxlength="30">Fresh</textarea>
-                    <br/>
-                    <label for="experience-2">Experience 2:</label>
-                    <br/>
-                    <textarea id="experience-2" class="input" placeholder="Experience 2" type="text" minlength="3" maxlength="30"></textarea>
-                    <br/>
-                    <label for="experience-3">Experience 3:</label>
-                    <br/>
-                    <textarea id="experience-3" class="input" placeholder="Experience 3" type="text" minlength="3" maxlength="30"></textarea>
-                    <br/>
-                    <label for="experience-4">Experience 4:</label>
-                    <br/>
-                    <textarea id="experience-4" class="input" placeholder="Experience 4" type="text" minlength="3" maxlength="30"></textarea>
-                </fieldset>
-                <button type="submit" class="button">Create Resume</button>
+            <label for="experience-1">Experience 1:</label>
+            <br />
+            <textarea id="experience-1" class="input" placeholder="Experience 1" type="text" minlength="3"
+                maxlength="30">Fresh</textarea>
+            <br />
+            <label for="experience-2">Experience 2:</label>
+            <br />
+            <textarea id="experience-2" class="input" placeholder="Experience 2" type="text" minlength="3"
+                maxlength="30"></textarea>
+            <br />
+            <label for="experience-3">Experience 3:</label>
+            <br />
+            <textarea id="experience-3" class="input" placeholder="Experience 3" type="text" minlength="3"
+                maxlength="30"></textarea>
+            <br />
+            <label for="experience-4">Experience 4:</label>
+            <br />
+            <textarea id="experience-4" class="input" placeholder="Experience 4" type="text" minlength="3"
+                maxlength="30"></textarea>
+        </fieldset>
+        <button type="submit" class="button">Create Resume</button>
     </form>
 
     <!-- user input information ended -->
 
-<hr/>
+    <hr />
 
     <!-- resume started -->
 
     <resume>
 
         <!-- header -->
-        <div><h1 id="name-r"></h1></div>
+        <div>
+            <h1 id="name-r" class="name"></h1>
+        </div>
         <h2>Object</h2>
         <p id="object-r"></p>
-        <div><p>Contact Number:</p><p id="contact-r"></p></div>
-        <div><p>Address:</p><p id="address-r"></p></div>
-        <div><p>G-Mail:</p><p id="gmail-r"></p></div>
-        
+        <div>
+            <p>Contact Number:</p>
+            <p id="contact-r"></p>
+        </div>
+        <div>
+            <p>Address:</p>
+            <p id="address-r"></p>
+        </div>
+        <div>
+            <p>G-Mail:</p>
+            <p id="gmail-r"></p>
+        </div>
+
         <!-- personal information -->
         <h2 class="heading">Personal Information</h2>
         <list>
@@ -191,12 +230,12 @@
                 <li>Martial Status:</li>
             </ul>
             <info>
-                <p id="name-r">aaa</p>
-                <p id="religion-r">aaa</p>
-                <p id="age-r">aaa</p>
-                <p id="nationality-r">aaa</p>
-                <p id="nic-r">aaa</p>
-                <p id="martialstatus-r">aaa</p>
+                <p id="name-r"></p>
+                <p id="religion-r"></p>
+                <p id="age-r"></p>
+                <p id="nationality-r"></p>
+                <p id="nic-r"></p>
+                <p id="martialstatus-r"></p>
             </info>
         </list>
 
@@ -234,8 +273,9 @@
 
     </resume>
 
-    <hr/>
+    <hr />
     <p class="center">Thanks For Visiting</p>
     <p class="center">Regards! Muhammad Ahad&copy;</p>
 </body>
+
 </html>

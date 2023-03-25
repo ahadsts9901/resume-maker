@@ -1,125 +1,125 @@
-*{
-    font-family: 'Ruda', 'sans-serif';
-    font-weight: 800;
+* {
+  font-family: 'Ruda', 'sans-serif';
+  font-weight: 800;
 }
 
 /* user input */
 
-header{
-    width: 100%;
-    position: sticky;
-    top: 0%;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0em;
-    color: #fff;
-    background-color: #1e437d;
-    /* background-color: #1a3961; */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0em;
+  color: #fff;
+  background-color: #1e437d;
+  /* background-color: #1a3961; */
 }
 
-header h2{
-    margin: 0em;
-    padding: 0.2em 1.5em;
-    border: 2px solid #fff;
-    border-radius: 20px;
+header h2 {
+  margin: 0em;
+  padding: 0.2em 1.5em;
+  border: 2px solid #fff;
+  border-radius: 20px;
 }
 
-.message{
-    text-align: center;
-    width: 100%;
-    height: 2em;
+.message {
+  text-align: center;
+  width: 100%;
+  height: 2em;
 }
 
-body{
-    padding: 2em 0em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  padding: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-fieldset{
-    padding: 1em;
-    border: 2px solid #1e437d;
-    line-height: 3em;
-    margin: 1em 0em;
-    width: 90%;
+fieldset {
+  padding: 1em;
+  border: 2px solid #1e437d;
+  line-height: 3em;
+  margin: 1em 0em;
+  width: 90%;
 }
 
-legend{
+legend {
   margin: 1em 0em;
 }
 
-legend h2{
-    margin: 0em;
-    border-right: 2px solid #1e437d;
-    border-left: 2px solid #1e437d;
-    margin: 1em 0em ;
-    padding: 0em 0.5em;
-    font-size: 1.3em;
+legend h2 {
+  margin: 0em;
+  border-right: 2px solid #1e437d;
+  border-left: 2px solid #1e437d;
+  margin: 1em 0em;
+  padding: 0em 0.5em;
+  font-size: 1.3em;
 }
 
-.input{
-    color: #000;
-    background-color: #ececec;
-    border: 0px;
-    border-radius: 10px;
-    padding: 0.5em;
-    width: 18em;
-    height: 3em;
+.input {
+  color: #000;
+  background-color: #ececec;
+  border: 0px;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 18em;
+  height: 3em;
 }
 
-.textarea{
-    color: #000;
-    background-color: #ececec;
-    border: 0px;
-    border-radius: 10px;
-    padding: 0.5em;
-    width: 18em;
-    height: 8em;
+.textarea {
+  color: #000;
+  background-color: #ececec;
+  border: 0px;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 18em;
+  height: 8em;
 }
 
-td{
-    padding-left: 1em;
-    padding-bottom: 1em;
+td {
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
 
-.top{
-    display: flex;
-    justify-content: flex-start;    
+.top {
+  display: flex;
+  justify-content: flex-start;
 }
 
-legend h3{
-    margin-bottom: 0em;
-    margin-top: 1em;
+legend h3 {
+  margin-bottom: 0em;
+  margin-top: 1em;
 }
 
-.button{
-    background-color: #1e437d;
-    color: #fff;
-    border: 0px;
-    border-radius: 6px;
-    padding: 0.5em 1em;
-    width: 12em;
-    height: 4em;
-    margin-top: 3em;
+.button {
+  background-color: #1e437d;
+  color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  width: 12em;
+  height: 4em;
+  margin-top: 3em;
 }
 
-.center{
-        font-weight: bold;
+.center {
+  font-weight: bold;
 }
 
-hr{
+hr {
   border: 1px solid #1e437d;
   width: 100%;
   margin: 3em 0em;
@@ -127,7 +127,7 @@ hr{
 
 /* resume */
 
-resume{
+resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,22 +136,23 @@ resume{
   padding: 1em;
 }
 
-resume h2, resume h1{
+resume h2,
+resume h1 {
   margin: 0.2em;
 }
 
-div{
+div {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.5em;
 }
 
-div p{
+div p {
   margin: 0.3em 0em;
 }
 
-.heading{
+.heading {
   width: 100%;
   text-align: center;
   padding: 0.5em;
@@ -160,99 +161,103 @@ div p{
   border: 1px solid #000;
 }
 
-list{
+list {
   display: flex;
   justify-content: left;
   column-gap: 1em;
   width: 100%;
 }
 
-list ul{
+list ul {
   padding: 1.5em 0em;
   padding-left: 1em;
   margin: 0em;
 }
 
-.list{
+.list {
   display: flex;
   justify-content: left;
   margin: 0.2em;
 }
 
-info{
+info {
   padding: 1.5em 0em;
   padding-left: 1em;
 }
 
-info p{
+info p {
   margin: 0em;
 }
 
- /* custom radio button */
+.name {
+  color: #1e437d;
+}
 
-  /* Customize the label (the container) */
-  .container {
-    display: inline-block;
-    position: relative;
-    padding-left: 1.5em;
-    margin-bottom: 0em;
-    cursor: pointer;
-    font-size: 1em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .radio {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 1em;
-    width: 1em;
-    background-color: #dadada;
-    border-radius: 5px;
-    border: 0px;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .radio {
-    background-color: #dadada;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .radio {
-    background-color: #1e437d;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .radio:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .radio:after {
-    display: block;
-  }
+/* custom radio button */
+
+/* Customize the label (the container) */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0em;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #dadada;
+  border-radius: 5px;
+  border: 0px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.radio {
+  background-color: #dadada;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.radio {
+  background-color: #1e437d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.radio:after {
+  display: block;
+}
 
 /* Style the indicator (dot/circle) */
 .container .radio:after {
-    top: 0.34em;
-    left: 0.37em;
-    width: 0.3em;
-    height: 0.3em;
-    border-radius: 100%;
-    background: white;
+  top: 0.34em;
+  left: 0.37em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 100%;
+  background: white;
 }
