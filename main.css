@@ -3,6 +3,8 @@
     font-weight: 800;
 }
 
+/* user input */
+
 header{
     width: 100%;
     position: sticky;
@@ -50,6 +52,21 @@ fieldset{
     padding: 1em;
     border: 2px solid #1e437d;
     line-height: 3em;
+    margin: 1em 0em;
+    width: 90%;
+}
+
+legend{
+  margin: 1em 0em;
+}
+
+legend h2{
+    margin: 0em;
+    border-right: 2px solid #1e437d;
+    border-left: 2px solid #1e437d;
+    margin: 1em 0em ;
+    padding: 0em 0.5em;
+    font-size: 1.3em;
 }
 
 .input{
@@ -102,7 +119,76 @@ legend h3{
         font-weight: bold;
 }
 
- /* radio button */
+hr{
+  border: 1px solid #1e437d;
+  width: 100%;
+  margin: 3em 0em;
+}
+
+/* resume */
+
+resume{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #1e437d;
+  padding: 1em;
+}
+
+resume h2, resume h1{
+  margin: 0.2em;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+div p{
+  margin: 0.3em 0em;
+}
+
+.heading{
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  background-color: #1e437d;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+list{
+  display: flex;
+  justify-content: left;
+  column-gap: 1em;
+  width: 100%;
+}
+
+list ul{
+  padding: 1.5em 0em;
+  padding-left: 1em;
+  margin: 0em;
+}
+
+.list{
+  display: flex;
+  justify-content: left;
+  margin: 0.2em;
+}
+
+info{
+  padding: 1.5em 0em;
+  padding-left: 1em;
+}
+
+info p{
+  margin: 0.2em;
+}
+
+ /* custom radio button */
 
   /* Customize the label (the container) */
   .container {
