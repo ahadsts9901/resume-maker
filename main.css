@@ -134,11 +134,22 @@ resume {
   align-items: center;
   border: 2px dashed #1e437d;
   padding: 1em;
+  width: 90%;
 }
 
 resume h2,
 resume h1 {
   margin: 0.2em;
+}
+
+#object-r,
+#address-r {
+  width: 80%;
+  text-align: center;
+}
+
+.nolist {
+  list-style-type: none;
 }
 
 div {
@@ -170,7 +181,7 @@ list {
 
 list ul {
   padding: 1.5em 0em;
-  padding-left: 1em;
+  padding-left: 0.5em;
   margin: 0em;
 }
 
@@ -189,8 +200,10 @@ info p {
   margin: 0em;
 }
 
-.name {
+#headername-r {
   color: #1e437d;
+  width: 100%;
+  text-align: center;
 }
 
 /* custom radio button */

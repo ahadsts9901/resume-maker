@@ -6,12 +6,13 @@ function CreateResume(event) {
 
     // taking input from form
 
-    let name = document.getElementById('name').value
+    let headername = document.getElementById('headername').value
     let contact = document.getElementById('contact').value
     let address = document.getElementById('address').value
     let gmail = document.getElementById('gmail').value
     let object = document.getElementById('object').value
 
+    let name = document.getElementById('name').value
     let gender = document.getElementById('gender').value
     let religion = document.getElementById('religion').value
     let nationality = document.getElementById('nationality').value
@@ -35,12 +36,13 @@ function CreateResume(event) {
 
     // show output in resume
 
-    document.getElementById('name-r').innerHTML = name
+    document.getElementById('headername-r').innerHTML = headername
     document.getElementById('contact-r').innerHTML = contact
     document.getElementById('address-r').innerHTML = address
     document.getElementById('gmail-r').innerHTML = gmail
     document.getElementById('object-r').innerHTML = object
 
+    document.getElementById('name-r').innerHTML = name
     document.getElementById('gender-r').innerHTML = gender
     document.getElementById('religion-r').innerHTML = religion
     document.getElementById('nationality-r').innerHTML = nationality

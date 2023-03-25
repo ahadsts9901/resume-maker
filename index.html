@@ -43,9 +43,9 @@
             <legend>
                 <h2>Header Information</h2>
             </legend>
-            <label for="name">Name:</label>
+            <label for="headername">Name:</label>
             <br />
-            <input required id="name" class="input" placeholder="Name" type="text" minlength="3" maxlength="20">
+            <input required id="headername" class="input" placeholder="Name" type="text" minlength="3" maxlength="20">
             <br />
             <label for="contact">Contact:</label>
             <br />
@@ -71,20 +71,9 @@
             <legend>
                 <h2>Personal Information</h2>
             </legend>
-            Gender:
+            <label for="name">Name:</label>
             <br />
-            <label class="container">
-                <input class="radio" required id="gender" type="radio" name="gender" value="male">
-                <span class="radio"></span>
-                Male</label>
-            <label class="container">
-                <input class="radio" required id="gender" type="radio" name="gender" value="female">
-                <span class="radio"></span>
-                Female</label>
-            <label class="container">
-                <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
-                <span class="radio"></span>
-                Third</label>
+            <input required id="name" class="input" placeholder="Name" type="text" minlength="3" maxlength="20">
             <br />
             <label for="religion">Religion:</label>
             <br />
@@ -102,6 +91,21 @@
             <label for="nic">NIC:</label>
             <br />
             <input required id="nic" class="input" placeholder="NIC" type="number" minlength="5" maxlength="20">
+            <br />
+            Gender:
+            <br />
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="male">
+                <span class="radio"></span>
+                Male</label>
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="female">
+                <span class="radio"></span>
+                Female</label>
+            <label class="container">
+                <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
+                <span class="radio"></span>
+                Third</label>
             <br />
             Martial Status:
             <br />
@@ -123,17 +127,17 @@
             <label for="school-education">School Education:</label>
             <br />
             <textarea required id="school-education" class="input" placeholder="School Education" type="text"
-                minlength="3" maxlength="20">Matriculation From</textarea>
+                minlength="3" maxlength="35">Matriculation From</textarea>
             <br />
             <label for="college-education">College Education:</label>
             <br />
             <textarea required id="college-education" class="input" placeholder="College Education" type="text"
-                minlength="3" maxlength="20">Intermediate From</textarea>
+                minlength="3" maxlength="35">Intermediate From</textarea>
             <br />
             <label for="professional-education">Professional Education:</label>
             <br />
             <textarea required id="professional-education" class="input" placeholder="Professional Education"
-                type="text" minlength="3" maxlength="20"></textarea>
+                type="text" minlength="3" maxlength="35"></textarea>
 
         </fieldset>
         <!-- skills -->
@@ -171,22 +175,22 @@
             <label for="experience-1">Experience 1:</label>
             <br />
             <textarea id="experience-1" class="input" placeholder="Experience 1" type="text" minlength="3"
-                maxlength="30">Fresh</textarea>
+                maxlength="40">Fresh</textarea>
             <br />
             <label for="experience-2">Experience 2:</label>
             <br />
             <textarea id="experience-2" class="input" placeholder="Experience 2" type="text" minlength="3"
-                maxlength="30"></textarea>
+                maxlength="40"></textarea>
             <br />
             <label for="experience-3">Experience 3:</label>
             <br />
             <textarea id="experience-3" class="input" placeholder="Experience 3" type="text" minlength="3"
-                maxlength="30"></textarea>
+                maxlength="40"></textarea>
             <br />
             <label for="experience-4">Experience 4:</label>
             <br />
             <textarea id="experience-4" class="input" placeholder="Experience 4" type="text" minlength="3"
-                maxlength="30"></textarea>
+                maxlength="40"></textarea>
         </fieldset>
         <button type="submit" class="button">Create Resume</button>
     </form>
@@ -201,7 +205,7 @@
 
         <!-- header -->
         <div>
-            <h1 id="name-r" class="name"></h1>
+            <h1 id="headername-r" class="name"></h1>
         </div>
         <h2>Object</h2>
         <p id="object-r"></p>
@@ -225,6 +229,7 @@
                 <li>Name:</li>
                 <li>Religion:</li>
                 <li>Age:</li>
+                <li>Gender:</li>
                 <li>Nationality:</li>
                 <li>NIC:</li>
                 <li>Martial Status:</li>
@@ -233,6 +238,7 @@
                 <p id="name-r"></p>
                 <p id="religion-r"></p>
                 <p id="age-r"></p>
+                <p id="gender-r"></p>
                 <p id="nationality-r"></p>
                 <p id="nic-r"></p>
                 <p id="martialstatus-r"></p>
@@ -243,9 +249,9 @@
         <h2 class="heading">Education</h2>
         <list>
             <ul>
-                <li id="school-education-r"></li>
-                <li id="college-education-r"></li>
-                <li id="professional-education-r"></li>
+                <li class="nolist" id="school-education-r"></li>
+                <li class="nolist" id="college-education-r"></li>
+                <li class="nolist" id="professional-education-r"></li>
             </ul>
         </list>
 
@@ -253,10 +259,10 @@
         <h2 class="heading">Skills</h2>
         <list>
             <ul>
-                <li id="skill-1-r"></li>
-                <li id="skill-2-r"></li>
-                <li id="skill-3-r"></li>
-                <li id="skill-4-r"></li>
+                <li class="nolist" id="skill-1-r"></li>
+                <li class="nolist" id="skill-2-r"></li>
+                <li class="nolist" id="skill-3-r"></li>
+                <li class="nolist" id="skill-4-r"></li>
             </ul>
         </list>
 
@@ -264,10 +270,10 @@
         <h2 class="heading">Experience</h2>
         <list>
             <ul>
-                <li id="experience-1-r"></li>
-                <li id="experience-2-r"></li>
-                <li id="experience-3-r"></li>
-                <li id="experience-4-r"></li>
+                <li class="nolist" id="experience-1-r"></li>
+                <li class="nolist" id="experience-2-r"></li>
+                <li class="nolist" id="experience-3-r"></li>
+                <li class="nolist" id="experience-4-r"></li>
             </ul>
         </list>
 
