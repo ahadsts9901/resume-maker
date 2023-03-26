@@ -211,71 +211,56 @@ list ul li {
   color: #1e437d;
 }
 
-/* custom radio button */
-
-/* Customize the label (the container) */
-.container {
-  display: inline-block;
-  position: relative;
-  padding-left: 1.5em;
-  margin-bottom: 0em;
-  cursor: pointer;
-  font-size: 1em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
+.watermark {
+  color: #dadada;
+  font-size: 15em;
   position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+  z-index: -10;
+  opacity: 50%;
+  transform: rotate(-45deg);
 }
 
-/* Create a custom checkbox */
-.radio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1em;
-  width: 1em;
-  background-color: #dadada;
-  border-radius: 5px;
-  border: 0px;
+@media only screen and (max-width: 900px) {
+
+
+  .watermark {
+    color: #dadada;
+    font-size: 10em;
+    position: absolute;
+    z-index: -10;
+    opacity: 50%;
+    transform: rotate(-45deg);
+  }
+
+
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input~.radio {
-  background-color: #dadada;
+@media only screen and (max-width: 600px) {
+
+
+  .watermark {
+    color: #dadada;
+    font-size: 8em;
+    position: absolute;
+    z-index: -10;
+    opacity: 50%;
+    transform: rotate(-45deg);
+  }
+
+
 }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked~.radio {
-  background-color: #1e437d;
-}
+@media only screen and (max-width: 500px) {
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.radio:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
 
-/* Show the checkmark when checked */
-.container input:checked~.radio:after {
-  display: block;
-}
+  .watermark {
+    color: #dadada;
+    font-size: 4em;
+    position: absolute;
+    z-index: -10;
+    opacity: 50%;
+    transform: rotate(0deg);
+  }
 
-/* Style the indicator (dot/circle) */
-.container .radio:after {
-  top: 0.34em;
-  left: 0.37em;
-  width: 0.3em;
-  height: 0.3em;
-  border-radius: 100%;
-  background: white;
+
 }
