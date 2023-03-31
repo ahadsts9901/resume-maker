@@ -1,0 +1,97 @@
+header,
+.message,
+form,
+hr,
+.center,
+.watermark {
+    display: none;
+}
+
+* {
+    font-family: 'Ruda', 'sans-serif';
+    font-weight: 800;
+}
+
+resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #1e437d;
+    padding: 1em;
+    width: 90%;
+}
+
+resume h2,
+resume h1 {
+    margin: 0.2em;
+}
+
+#object-r,
+#address-r {
+    width: 80%;
+    text-align: center;
+}
+
+.nolist {
+    list-style-type: none;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+div p {
+    margin: 0.3em 0em;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #1e437d;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+list {
+    display: flex;
+    justify-content: left;
+    column-gap: 1em;
+    width: 100%;
+}
+
+list ul {
+    padding: 1.5em 0em;
+    padding-left: 0.5em;
+    margin: 0em;
+}
+
+.list {
+    display: flex;
+    justify-content: left;
+    margin: 0.2em;
+}
+
+info {
+    padding: 1.5em 0em;
+    padding-left: 1em;
+}
+
+info p,
+list ul li {
+    margin: 1em 0em;
+}
+
+#headername-r {
+    color: #1e437d;
+    width: 100%;
+    text-align: center;
+}
+
+.blue {
+    color: #1e437d;
+}
